@@ -4,10 +4,33 @@
         <title>Baby Yoda Developers, Inc</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
         <style>
-            img.bio-image { float: left; padding: 0rem 3rem 0rem 1rem; height: 18.5rem; }
+            img.bio-image { 
+                float: left; 
+                padding: 2rem 2rem 2rem 2rem; 
+                height: 18rem; 
+                border-radius: 50%
+             }
+            .main {
+                   background: lightseagreen;
+                }
+
+            .header {
+                    color: white;
+                }
         </style>
+        <script>
+            alert("Hell yea");
+            function changeBackgroundColor() {
+                const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            document.body.style.background = color;
+            }
+        </script>
     </head>
-    <body>
+    <body class="main">
         <div class="container">
             <div class="row">
                 <div class="twelve column">
@@ -15,8 +38,8 @@
                     <img class="bio-image" src="https://i.ebayimg.com/images/g/IeIAAOSwJBdd8w4E/s-l500.png" alt="bio image">
 
                     <!-- Resume Title -->
-                    <h2>Ryan McClees</h2>
-                    <h5>Pretentious Asshole</h5>
+                    <h2 class="header">Ryan McClees</h2>
+                    <button onclick="changeBackgroundColor()">Suspected to Be a Person</button><br />
 
                     <!-- Contact Info -->
                     <span><strong>Email:</strong> <a href="mailto:rj.mcclees@gmail.com">rj.mcclees@gmail.com</a></span><br>
@@ -31,7 +54,7 @@
             <div class="row">
                 <div class="twelve column">
                     <h4>Work History</h4>
-
+                    
                     <h6><strong>Pied Piper</strong> <b><i>2017-Present</i></b></h6>
                     <p>Beard twee live-edge, pop-up kogi pabst etsy shoreditch small batch vegan. Skateboard brooklyn gochujang 90's ennui pour-over before they sold out swag cliche wolf butcher cronut sriracha shoreditch bushwick. <i>Activated charcoal jean shorts</i> chillwave four dollar toast meggings health goth cornhole.</p>
 
